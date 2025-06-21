@@ -74,8 +74,9 @@
 ---@field EXDEV integer cross-device link
 local errno = {}
 
----@param n integer
----@return string, integer
+---@param n? integer
+---@return string
+---@return integer
 function errno.errno(n) end
 
 ---@param n integer
