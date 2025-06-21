@@ -38,7 +38,9 @@ local signal = {}
 
 ---@param pid integer
 ---@param opt? integer
----@return integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function signal.kill(pid, opt) end
 
 ---@param pgrp integer
