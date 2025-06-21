@@ -121,7 +121,7 @@ function unistd.fsync(fd) end
 ---@return integer? errnum
 function unistd.ftruncate(fd, length) end
 
----@return integer?
+---@return string?
 ---@return string? errmsg
 ---@return integer? errnum
 function unistd.getcwd() end
