@@ -142,7 +142,6 @@ function unistd.getgroups() end
 
 ---@return integer?
 ---@return string? errmsg
----@return integer? errnum
 function unistd.gethostid() end
 
 ---@param arg string[]
