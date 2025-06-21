@@ -43,7 +43,9 @@ function signal.kill(pid, opt) end
 
 ---@param pgrp integer
 ---@param sig integer
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnumr
 function signal.killpg(pgrp, sig) end
 
 ---@param sig integer
