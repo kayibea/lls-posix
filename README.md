@@ -14,8 +14,8 @@ This project provides static type annotations for POSIX-related Lua modules to i
 - [x] `posix.fcntl`
 - [x] `posix.fnmatch`
 - [x] `posix.glob`
-- [ ] `posix.libgen`
-- [ ] `posix.poll`
+- [x] `posix.libgen`
+- [x] `posix.poll`
 - [ ] `posix.stdio`
 - [ ] `posix.stdlib`
 - [ ] `posix.time`
@@ -24,10 +24,10 @@ This project provides static type annotations for POSIX-related Lua modules to i
 - [ ] `posix.utime`
 - [ ] `posix.dirent`
 - [x] `posix.grp`
-- [ ] `posix.pwd`
+- [x] `posix.pwd`
 - [ ] `posix.termio`
 - [ ] `posix.syslog`
-- [ ] `posix.sched`
+- [x] `posix.sched`
 - [ ] `posix.sys.msg`
 - [ ] `posix.sys.resource`
 - [ ] `posix.sys.socket`
