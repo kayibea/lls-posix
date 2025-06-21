@@ -1,5 +1,9 @@
 ---@meta
 
+---@alias SignalConst 'SIG_DFL' | 'SIG_IGN'
+---@alias SignalHandler fun(signum: integer) | SignalConst
+
+
 ---@class signal
 ---@field SIGABRT integer abort ()
 ---@field SIGALRM integer alarm clock
@@ -57,9 +61,9 @@ function signal.killpg(pgrp, sig) end
 function signal.raise(sig) end
 
 ---@param signum integer
----@param handler function|integer
+---@param handler? SignalHandler
 ---@param flags? integer
----@return function
+---@return SignalHandler
 function signal.signal(signum, handler, flags) end
 
 return signal
