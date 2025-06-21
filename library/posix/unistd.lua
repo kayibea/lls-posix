@@ -35,7 +35,9 @@ function unistd._exit(status) end
 
 ---@param path string
 ---@param mode? string
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.access(path, mode) end
 
 ---@param seconds integer
@@ -48,11 +50,15 @@ function unistd.chdir(path) end
 ---@param path string
 ---@param uid integer
 ---@param gid integer
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.chown(path, uid, gid) end
 
 ---@param fd integer
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.close(fd) end
 
 ---@param trypass string
@@ -61,41 +67,59 @@ function unistd.close(fd) end
 function unistd.crypt(trypass, salt) end
 
 ---@param fd integer
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.dup(fd) end
 
 ---@param fd integer
 ---@param newfd integer
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.dup2(fd, newfd) end
 
 ---@param path string
 ---@param argt table
----@return nil, string, integer
+---@return nil
+---@return string? errmsg
+---@return integer? errnum
 function unistd.exec(path, argt) end
 
 ---@param path string
 ---@param argt table
----@return nil, string, integer
+---@return nil
+---@return string? errmsg
+---@return integer? errnum
 function unistd.execp(path, argt) end
 
 ---@param fd integer
----@return integer | nil, string, integer
+---@return integer
+---@return string? errmsg
+---@return integer? errnum
 function unistd.fdatasync(fd) end
 
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.fork() end
 
 ---@param fd integer
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.fsync(fd) end
 
 ---@param fd integer
 ---@param length integer
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.ftruncate(fd, length) end
 
----@return string | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.getcwd() end
 
 ---@return integer
@@ -107,10 +131,14 @@ function unistd.geteuid() end
 ---@return integer
 function unistd.getgid() end
 
----@return table<integer, integer> | nil, string, integer
+---@return integer[]?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.getgroups() end
 
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.gethostid() end
 
 ---@param arg string[]
@@ -132,19 +160,25 @@ function unistd.getppid() end
 function unistd.getuid() end
 
 ---@param fd integer
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.isatty(fd) end
 
 ---@param path string
 ---@param uid string | integer
 ---@param gid string | integer
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.lchown(path, uid, gid) end
 
 ---@param target string
 ---@param link string
 ---@param soft? boolean
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.link(target, link, soft) end
 
 ---@param targetdir integer
@@ -152,17 +186,23 @@ function unistd.link(target, link, soft) end
 ---@param linkdir integer
 ---@param link string
 ---@param flags integer
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.linkat(targetdir, target, linkdir, link, flags) end
 
 ---@param fd integer
 ---@param offset integer
 ---@param whence integer
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.lseek(fd, offset, whence) end
 
 ---@param inc integer
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.nice(inc) end
 
 ---@param path string
