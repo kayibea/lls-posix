@@ -45,6 +45,9 @@ function unistd.access(path, mode) end
 function unistd.alarm(seconds) end
 
 ---@param path string
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.chdir(path) end
 
 ---@param path string
