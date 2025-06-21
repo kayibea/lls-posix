@@ -1,0 +1,84 @@
+---@meta
+
+---@class errno
+---@field E2BIG integer argument list too long
+---@field EACCES integer permission denied
+---@field EADDRINUSE integer address already in use
+---@field EADDRNOTAVAIL integer can't assign requested address
+---@field EAFNOSUPPORT integer address family not supported by protocol family
+---@field EAGAIN integer resource temporarily unavailable
+---@field EALREADY integer operation already in progress
+---@field EBADF integer bad file descriptor
+---@field EBADMSG integer bad message
+---@field EBUSY integer resource busy
+---@field ECANCELED integer operation canceled
+---@field ECHILD integer no child processes
+---@field ECONNABORTED integer software caused connection abort
+---@field ECONNREFUSED integer connection refused
+---@field ECONNRESET integer connection reset by peer
+---@field EDEADLK integer resource deadlock avoided
+---@field EDESTADDRREQ integer destination address required
+---@field EDOM integer numerical argument out of domain
+---@field EEXIST integer file exists
+---@field EFAULT integer bad address
+---@field EFBIG integer file too large
+---@field EHOSTUNREACH integer no route to host
+---@field EIDRM integer identifier removed
+---@field EILSEQ integer illegal byte sequence
+---@field EINPROGRESS integer operation now in progress
+---@field EINTR integer interrupted system call
+---@field EINVAL integer invalid argument
+---@field EIO integer input/output error
+---@field EISCONN integer socket is already connected
+---@field EISDIR integer is a directory
+---@field ELOOP integer too many levels of symbolic links
+---@field EMFILE integer too many open files
+---@field EMLINK integer too many links
+---@field EMSGSIZE integer message too long
+---@field ENAMETOOLONG integer file name too long
+---@field ENETDOWN integer network is down
+---@field ENETRESET integer network dropped connection on reset
+---@field ENETUNREACH integer network is unreachable
+---@field ENFILE integer too many open files in system
+---@field ENOBUFS integer no buffer space available
+---@field ENODEV integer operation not supported by device
+---@field ENOENT integer no such file or directory
+---@field ENOEXEC integer exec format error
+---@field ENOLCK integer no locks available
+---@field ENOMEM integer cannot allocate memory
+---@field ENOMSG integer no message of desired type
+---@field ENOPROTOOPT integer protocol not available
+---@field ENOSPC integer no space left on device
+---@field ENOSYS integer function not implemented
+---@field ENOTCONN integer socket is not connected
+---@field ENOTDIR integer not a directory
+---@field ENOTEMPTY integer directory not empty
+---@field ENOTSOCK integer socket operation on non-socket
+---@field ENOTSUP integer operation not supported
+---@field ENOTTY integer inappropriate ioctl for device
+---@field ENXIO integer device not configured
+---@field EOPNOTSUPP integer operation not supported on socket
+---@field EOVERFLOW integer value too large to be stored in data type
+---@field EPERM integer operation not permitted
+---@field EPIPE integer broken pipe
+---@field EPROTO integer protocol error
+---@field EPROTONOSUPPORT integer protocol not supported
+---@field EPROTOTYPE integer protocol wrong type for socket
+---@field ERANGE integer result too large
+---@field EROFS integer read-only file system
+---@field ESPIPE integer illegal seek
+---@field ESRCH integer no such process
+---@field ETIMEDOUT integer operation timed out
+---@field ETXTBSY integer text file busy
+---@field EWOULDBLOCK integer operation would block
+---@field EXDEV integer cross-device link
+local errno = {}
+
+---@param n integer
+---@return string, integer
+function errno.errno(n) end
+
+---@param n integer
+function errno.set_errno(n) end
+
+return errno
