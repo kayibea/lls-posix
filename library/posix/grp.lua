@@ -16,14 +16,14 @@ function grp.getgrent() end
 
 ---@param gid integer
 ---@return PosixGroup?
----@return string?
----@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function grp.getgrgid(gid) end
 
 ---@param name string
 ---@return PosixGroup?
----@return string?
----@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function grp.getgrnam(name) end
 
 ---Rewind next `getgrent` back to start of database.
