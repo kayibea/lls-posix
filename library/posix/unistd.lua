@@ -98,7 +98,7 @@ function unistd.exec(path, argt) end
 function unistd.execp(path, argt) end
 
 ---@param fd integer
----@return integer
+---@return integer?
 ---@return string? errmsg
 ---@return integer? errnum
 function unistd.fdatasync(fd) end
