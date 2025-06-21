@@ -9,11 +9,11 @@ This project provides static type annotations for POSIX-related Lua modules to i
 
 #### Core Modules
 - [ ] `posix`
-- [ ] `posix.ctype`
-- [ ] `posix.errno`
-- [ ] `posix.fcntl`
-- [ ] `posix.fnmatch`
-- [ ] `posix.glob`
+- [x] `posix.ctype`
+- [x] `posix.errno`
+- [x] `posix.fcntl`
+- [x] `posix.fnmatch`
+- [x] `posix.glob`
 - [ ] `posix.libgen`
 - [ ] `posix.poll`
 - [ ] `posix.stdio`
@@ -23,7 +23,7 @@ This project provides static type annotations for POSIX-related Lua modules to i
 - [x] `posix.unistd`
 - [ ] `posix.utime`
 - [ ] `posix.dirent`
-- [ ] `posix.grp`
+- [x] `posix.grp`
 - [ ] `posix.pwd`
 - [ ] `posix.termio`
 - [ ] `posix.syslog`
