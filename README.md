@@ -16,13 +16,13 @@ This project provides static type annotations for POSIX-related Lua modules to i
 - [x] `posix.glob`
 - [x] `posix.libgen`
 - [x] `posix.poll`
-- [ ] `posix.stdio`
-- [ ] `posix.stdlib`
+- [x] `posix.stdio`
+- [x] `posix.stdlib`
 - [ ] `posix.time`
 - [x] `posix.signal`
 - [x] `posix.unistd`
 - [ ] `posix.utime`
-- [ ] `posix.dirent`
+- [x] `posix.dirent`
 - [x] `posix.grp`
 - [x] `posix.pwd`
 - [ ] `posix.termio`
