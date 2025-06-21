@@ -26,11 +26,10 @@ function stdlib.grantpt(fd) end
 function stdlib.mkdtemp(templ) end
 
 ---@param templ string
----@return integer?
----@return string?
+---@return integer
+---@return string
 function stdlib.mkstemp(templ) end
 
----@param templ string
 ---@return nil
 ---@return string errmsg
 ---@return integer errnum
