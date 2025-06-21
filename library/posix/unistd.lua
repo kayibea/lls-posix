@@ -145,6 +145,7 @@ function unistd.gethostid() end
 ---@param opts string
 ---@param opterr? integer
 ---@param opind? integer
+---@return fun(): string, integer?, integer
 function unistd.getopt(arg, opts, opterr, opind) end
 
 ---@return integer
