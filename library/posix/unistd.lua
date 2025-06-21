@@ -170,20 +170,32 @@ function unistd.nice(inc) end
 ---@return integer
 function unistd.pathconf(path, key) end
 
----@return integer, integer | nil, string, integer
+---@return integer?
+---@return integer?
+function unistd.pipe() end
+
+---@return nil
+---@return string? errmsg
+---@return integer? errnum
 function unistd.pipe() end
 
 ---@param fd integer
 ---@param count integer
----@return string | nil, string, integer
+---@return string?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.read(fd, count) end
 
 ---@param path string
----@return string | nil, string, integer
+---@return string?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.readlink(path) end
 
 ---@param path string
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.rmdir(path) end
 
 ---@param what SetPidOption
@@ -203,32 +215,44 @@ function unistd.sync() end
 function unistd.sysconf(key) end
 
 ---@param fd integer
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.tcgetpgrp(fd) end
 
 ---@param fd integer
 ---@param pgid integer
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.tcsetpgrp(fd, pgid) end
 
 ---@param path string
 ---@param length integer
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.truncate(path, length) end
 
 ---@param fd? integer
----@return string | nil, string, integer
+---@return string?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.ttyname(fd) end
 
 ---@param path string
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.unlink(path) end
 
 ---@param fd integer
 ---@param buf string
 ---@param nbytes? integer
 ---@param offset? integer
----@return integer | nil, string, integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.write(fd, buf, nbytes, offset) end
 
 return unistd
