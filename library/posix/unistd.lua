@@ -244,7 +244,10 @@ function unistd.rmdir(path) end
 
 ---@param what SetPidOption
 ---@param id integer
----@param gid integer
+---@param gid? integer
+---@return integer?
+---@return string? errmsg
+---@return integer? errnum
 function unistd.setpid(what, id, gid) end
 
 ---@param seconds integer
