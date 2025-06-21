@@ -1,6 +1,7 @@
 ---@meta
 
----@alias SetPidOption  'u'| 'U'| 'g'| 'G'| 's'|'p'
+---@alias AccessMode    'r'|'w'|'x'| 'f'|
+---@alias SetPidOption  'u'|'U'|'g'| 'G'| 's'|'p'
 
 ---@class unistd
 ---@field _PC_CHOWN_RESTRICTED integer return 1 if chown requires appropriate privileges, 0 otherwise
@@ -34,7 +35,7 @@ local unistd = {}
 function unistd._exit(status) end
 
 ---@param path string
----@param mode? string
+---@param mode? AccessMode
 ---@return integer?
 ---@return string? errmsg
 ---@return integer? errnum
