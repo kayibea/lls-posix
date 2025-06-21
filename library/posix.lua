@@ -1,6 +1,6 @@
 ---@meta
 
 ---@class posix : signal, unistd, ctype
-posix = {}
+local posix = {}
 
 return posix

@@ -34,7 +34,7 @@
 ---@field SA_NODEFER integer don't mask the signal we're delivering
 ---@field SA_RESETHAND integer reset to SIG_DFL when taking a signal
 ---@field SA_RESTART integer allow syscalls to restart instead of returning EINTR
-signal = {}
+local signal = {}
 
 ---@param pid integer
 ---@param opt? integer

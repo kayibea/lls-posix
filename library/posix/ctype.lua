@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class ctype
-ctype = {}
+local ctype = {}
 
 ---@param character string
 ---@return integer

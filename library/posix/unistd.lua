@@ -28,7 +28,7 @@
 ---@field STDERR_FILENO integer standard error file descriptor
 ---@field STDIN_FILENO integer standard input file descriptor
 ---@field STDOUT_FILENO integer standard output file descriptor
-unistd = {}
+local unistd = {}
 
 ---@param status integer
 function unistd._exit(status) end
