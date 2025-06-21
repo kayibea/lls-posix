@@ -84,7 +84,7 @@ function unistd.dup(fd) end
 function unistd.dup2(fd, newfd) end
 
 ---@param path string
----@param argt table
+---@param argt string[]
 ---@return nil
 ---@return string? errmsg
 ---@return integer? errnum
