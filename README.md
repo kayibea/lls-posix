@@ -31,7 +31,7 @@ This project provides static type annotations for POSIX-related Lua modules to i
 - [x] `posix.sys.msg`
 - [x] `posix.sys.resource`
 - [x] `posix.sys.socket`
-- [ ] `posix.sys.stat`
+- [x] `posix.sys.stat`
 - [ ] `posix.sys.statvfs`
 - [ ] `posix.sys.time`
 - [ ] `posix.sys.times`
