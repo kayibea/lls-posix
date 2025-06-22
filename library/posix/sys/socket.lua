@@ -148,7 +148,7 @@ function socket.getsockopt(fd, level, name) end
 ---@param fd integer
 ---@param level integer
 ---@param name integer
----@return timeval
+---@return PosixTimeval
 function socket.getsockopt(fd, level, name) end
 
 ---@param fd integer
