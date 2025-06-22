@@ -7,4 +7,9 @@
 ---@class time
 local time = {}
 
+---@return PosixTimeval?
+---@return string? errmsg
+---@return integer? errnum
+function time.gettimeofday() end
+
 return time
