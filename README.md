@@ -36,7 +36,7 @@ This project provides static type annotations for POSIX-related Lua modules to i
 - [x] `posix.sys.time`
 - [x] `posix.sys.times`
 - [x] `posix.sys.utsname`
-- [ ] `posix.sys.wait`
+- [x] `posix.sys.wait`
 
 ---
 
