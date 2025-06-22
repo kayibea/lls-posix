@@ -6,9 +6,9 @@
 ---@field socktype integer? one of SOCK_STREAM, SOCK_DGRAM or SOCK_RAW
 ---@field protocol integer? one of IPPROTO_TCP or IPPROTO_UDP
 
----@class timeval
----@field tv_sec integer  # seconds
----@field tv_usec integer # microseconds
+---@class PosixTimeval
+---@field tv_sec integer seconds elapsed
+---@field tv_usec integer remainder in microseconds
 
 ---@class linger
 ---@field l_onoff integer  # 0 or 1
