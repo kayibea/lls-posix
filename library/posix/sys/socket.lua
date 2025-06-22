@@ -6,7 +6,7 @@
 ---@field socktype integer? one of SOCK_STREAM, SOCK_DGRAM or SOCK_RAW
 ---@field protocol integer? one of IPPROTO_TCP or IPPROTO_UDP
 
----@class linger
+---@class PosixLinger
 ---@field l_onoff integer  # 0 or 1
 ---@field l_linger integer # seconds
 
@@ -154,7 +154,7 @@ function socket.getsockopt(fd, level, name) end
 ---@param fd integer
 ---@param level integer
 ---@param name integer
----@return linger
+---@return PosixLinger
 function socket.getsockopt(fd, level, name) end
 
 ---@param fd integer
