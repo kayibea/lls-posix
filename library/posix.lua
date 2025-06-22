@@ -5,7 +5,7 @@
 ---@class posix : grp     , libgen, poll   , pwd
 ---@class posix : sched   , stdio , stdlib , sysvmsg
 ---@class posix : resource, socket, stat   , statvfs
----@class posix : time    , times
+---@class posix : time    , times , utsname
 local posix = {}
 
 return posix
