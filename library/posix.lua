@@ -4,7 +4,7 @@
 ---@class posix : errno   , fcntl , fnmatch, glob
 ---@class posix : grp     , libgen, poll   , pwd
 ---@class posix : sched   , stdio , stdlib , sysvmsg
----@class posix : resource
+---@class posix : resource, socket
 local posix = {}
 
 return posix
