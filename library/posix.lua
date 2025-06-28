@@ -6,6 +6,7 @@
 ---@class posix : sched   , stdio , stdlib , sysvmsg
 ---@class posix : resource, socket, stat   , statvfs
 ---@class posix : time    , times , utsname, wait
+---@class posix : syslog
 local posix = {}
 
 return posix
