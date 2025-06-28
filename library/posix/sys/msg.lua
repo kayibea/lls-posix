@@ -64,7 +64,7 @@ function sysvmsg.msgrcv(id, size, type, flags) end
 ---@param flags integer?
 ---@return integer?
 ---@return string? errmsg
----@return integer? errmsg
+---@return integer? errnum
 function sysvmsg.msgsnd(id, type, message, flags) end
 
 return sysvmsg
