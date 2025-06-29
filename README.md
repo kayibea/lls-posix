@@ -25,7 +25,7 @@ This project provides static type annotations for POSIX-related Lua modules to i
 - [x] `posix.dirent`
 - [x] `posix.grp`
 - [x] `posix.pwd`
-- [ ] `posix.termio`
+- [x] `posix.termio`
 - [x] `posix.syslog`
 - [x] `posix.sched`
 - [x] `posix.sys.msg`
