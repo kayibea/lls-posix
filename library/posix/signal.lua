@@ -3,7 +3,6 @@
 ---@alias SignalConst 'SIG_DFL' | 'SIG_IGN'
 ---@alias SignalHandler fun(signum: integer) | SignalConst
 
-
 ---@class signal
 ---@field SIGABRT integer abort ()
 ---@field SIGALRM integer alarm clock
@@ -40,30 +39,36 @@
 ---@field SA_RESTART integer allow syscalls to restart instead of returning EINTR
 local signal = {}
 
----@param pid integer
----@param opt? integer
----@return integer?
----@return string? errmsg
----@return integer? errnum
+
+--- Send a signal to the given process.
+---@param pid integer Process ID to act on
+---@param opt? integer Signal to send (default SIGTERM)
+---@return integer? 0 if successful, nil otherwise
+---@return string? errmsg Error message if operation failed
+---@return integer? errnum Error number if operation failed
 function signal.kill(pid, opt) end
 
----@param pgrp integer
----@param sig? integer
----@return integer?
----@return string? errmsg
----@return integer? errnum
+--- Send a signal to the given process group.
+---@param pgrp integer Group ID to act on, or 0 for the sending process's group
+---@param sig? integer Signal to send (default SIGTERM)
+---@return integer? 0 if successful, nil otherwise
+---@return string? errmsg Error message if operation failed
+---@return integer? errnum Error number if operation failed
 function signal.killpg(pgrp, sig) end
 
----@param sig integer
----@return integer?
----@return string? errmsg
----@return integer? errnum
+--- Raise a signal on this process.
+---@param sig integer Signal to send
+---@return integer? 0 if successful, nil otherwise
+---@return string? errmsg Error message if operation failed
+---@return integer? errnum Error number if operation failed
 function signal.raise(sig) end
 
----@param signum integer
----@param handler? SignalHandler
----@param flags? integer
----@return SignalHandler
+--- Install a signal handler for this signal number.
+--- Uses sigaction for guaranteed semantics.
+---@param signum integer Signal number
+---@param handler? SignalHandler Function, or SIG_IGN or SIG_DFL (default SIG_DFL)
+---@param flags? integer Optional sa_flags element of struct sigaction
+---@return SignalHandler Previous handler function
 function signal.signal(signum, handler, flags) end
 
 return signal
