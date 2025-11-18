@@ -356,10 +356,6 @@ function unistd.nice(inc) end
 --- ```
 function unistd.pathconf(path, key) end
 
----@return integer?
----@return integer?
-function unistd.pipe() end
-
 --- Creates a pipe.
 ---@return integer? Read end file descriptor if successful, nil otherwise
 ---@return integer? Write end file descriptor if successful, nil otherwise
