@@ -1,7 +1,7 @@
 # LLS Posix Annotations
 
-**LLS annotations for Lua POSIX modules**  
-This project provides static type annotations for POSIX-related Lua modules to improve compatibility with Lua Language Servers (LLS), enabling better autocompletion, type checking, and development ergonomics.  
+**LLS annotations for Lua POSIX modules**
+This project provides static type annotations for POSIX-related Lua modules to improve compatibility with Lua Language Servers (LLS), enabling better autocompletion, type checking, and development ergonomics.
 
 ## 🚧 Roadmap
 
@@ -45,6 +45,7 @@ This project provides static type annotations for POSIX-related Lua modules to i
 Only type annotations are currently provided. Documentation will be added once core modules are implemented.
 
 #### Function-Level Docstrings
-- [ ] `posix.signal`
-- [ ] `posix.unistd`
+- [x] `posix.signal`
+- [x] `posix.unistd`
+- [ ] `posix.stdlib`
 - [ ] Other modules (incrementally)
